@@ -41,7 +41,7 @@
         compatible = "invensense,icm42670";
         label = "ICM42670";
         reg = <0>;
-        spi-max-frequency = <0>;
+        spi-max-frequency = <24000000>;
         int-gpios = <&gpio0 5 GPIO_ACTIVE_HIGH>;
         accel-hz = <800>;
         accel-fs = <16>;
