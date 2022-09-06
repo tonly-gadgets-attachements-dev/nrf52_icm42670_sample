@@ -51,15 +51,15 @@
     pinctrl-names = "default", "sleep";
     cs-gpios = <&gpio0 24 GPIO_ACTIVE_LOW>;
 
-    test_spi_icm42670: icm42670@0 {
-        compatible = "invensense,icm42670";
-        label = "ICM42670";
+    test_spi_icm42688: icm42688@0 {
+        compatible = "invensense,icm42688";
+        label = "ICM42688";
         reg = <0>;
         spi-max-frequency = <24000000>;
         int-gpios = <&gpio0 5 GPIO_ACTIVE_HIGH>;
-        accel-hz = <800>;
+        accel-hz = <500>;
         accel-fs = <16>;
-        gyro-hz = <800>;
+        gyro-hz = <500>;
         gyro-fs = <2000>;
     };
 };
